@@ -1,0 +1,43 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<body ng-app="myApp" ng-controller ="myCtrl">
+
+<div >
+  x1: <input type="text" ng-model="x1">
+  y1: <input type="text" ng-model="y1">  
+  </br>
+  x2: <input type="text" ng-model="x2">
+  y2: <input type="text" ng-model="y2">
+  </br>
+  </br>
+  <div>
+  	<b>x1: </b> {{x1}}</br>
+  	<b>y1: </b> {{y1}}</br>
+  	<b>x2: </b> {{x2}}</br>
+	<b>y2: </b> {{y2}}
+  </div>
+</div> 
+  
+  </br>
+
+  <!-- <button type="button" ng-click="Draw({{x1 | number:0}},{{y1 | number:0}},{{x2 | number:0}},{{y2 | number:0}})">Draw!</button>  -->  
+  <button ng-click="Draw()">Draw!</button>  
+  <button ng-click="DrawAnimated(x1, y1, x2, y2)">Draw! (Animate)</button>   
+  <button ng-click="ClearCanvas()">Clear</button>   
+  </br>
+  </br>
+
+  <div test-dir>
+
+  </br>
+
+</div>
+
+<!--<script src="js/module.js"></script>-->
+<script src="js/app.js"></script>
+<script src="js/ctrl.js"></script>
+</body>
+</html>
+
+
